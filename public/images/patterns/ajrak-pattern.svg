@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100" height="100" fill="#ffffff"/>
+  
+  <!-- Ajrak Pattern Unit -->
+  <g id="ajrak-unit">
+    <!-- Center Diamond -->
+    <path d="M50,20 L80,50 L50,80 L20,50 Z" 
+          fill="#ff7e5f" 
+          fill-opacity="0.1"/>
+    
+    <!-- Decorative Circles -->
+    <circle cx="50" cy="50" r="15" 
+            fill="none" 
+            stroke="#4F46E5" 
+            stroke-width="1"
+            stroke-opacity="0.2"/>
+    
+    <!-- Corner Flowers -->
+    <g id="corner-flower">
+      <path d="M20,20 Q35,35 20,50 Q35,35 50,20" 
+            fill="none" 
+            stroke="#ff7e5f" 
+            stroke-width="1"
+            stroke-opacity="0.1"/>
+    </g>
+    
+    <!-- Repeat Corner Flowers -->
+    <use href="#corner-flower" transform="rotate(90,50,50)"/>
+    <use href="#corner-flower" transform="rotate(180,50,50)"/>
+    <use href="#corner-flower" transform="rotate(270,50,50)"/>
+  </g>
+  
+  <!-- Pattern Repetition -->
+  <use href="#ajrak-unit" x="0" y="0"/>
+  <use href="#ajrak-unit" x="100" y="0"/>
+  <use href="#ajrak-unit" x="0" y="100"/>
+  <use href="#ajrak-unit" x="100" y="100"/>
+</svg>

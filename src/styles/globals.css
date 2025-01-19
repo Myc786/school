@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sindhi-pattern {
+  background-color: #ffffff;
+  background-image: url('/images/patterns/sindhi-pattern.svg');
+  background-repeat: repeat;
+  background-size: 100px 100px;
+}
+
+.ajrak-pattern {
+  background-color: #ffffff;
+  background-image: url('/images/patterns/ajrak-pattern.svg');
+  background-repeat: repeat;
+  background-size: 100px 100px;
+}
+
+/* Sindhi Cultural Elements */
+.sindhi-border {
+  border-image: url('/images/patterns/ajrak-pattern.svg') 30 round;
+}
+
+.sindhi-accent {
+  position: relative;
+}
+
+.sindhi-accent::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background-image: url('/images/patterns/sindhi-pattern.svg');
+  background-size: contain;
+  opacity: 0.2;
+}
+
+/* Custom Animations */
+@keyframes sindhi-float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.sindhi-animate {
+  animation: sindhi-float 3s ease-in-out infinite;
+}

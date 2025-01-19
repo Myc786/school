@@ -1,0 +1,45 @@
+{
+  "name": "school-management",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "sanity:dev": "cd studio && sanity dev",
+    "sanity:start": "cd studio && sanity start",
+    "sanity:build": "cd studio && sanity build"
+  },
+  "dependencies": {
+    "@clerk/nextjs": "^6.9.14",
+    "@radix-ui/react-slider": "^1.2.2",
+    "@radix-ui/react-slot": "^1.0.2",
+    "@react-google-maps/api": "^2.20.5",
+    "@sanity/client": "^6.25.0",
+    "@sanity/image-url": "^1.1.0",
+    "@types/node": "^22.10.7",
+    "@types/react": "^19.0.7",
+    "@types/react-dom": "^19.0.3",
+    "clsx": "^2.1.1",
+    "date-fns": "^4.1.0",
+    "embla-carousel-react": "^8.0.0-rc12",
+    "framer-motion": "^11.18.1",
+    "groq": "^3.70.0",
+    "lucide-react": "^0.473.0",
+    "next": "^15.1.5",
+    "next-auth": "^4.24.5",
+    "next-sanity": "^9.8.37",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "swiper": "^11.2.1",
+    "tailwind-merge": "^2.6.0"
+  },
+  "devDependencies": {
+    "@types/next-auth": "^3.13.0",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^3.4.17",
+    "typescript": "5.7.3"
+  }
+}
