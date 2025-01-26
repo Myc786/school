@@ -39,7 +39,7 @@ async function getSportsWeekContent() {
       description
     }
   }`;
-  
+
   try {
     const content = await client.fetch<SportsWeekContent | null>(query);
     return content || {};
@@ -119,9 +119,9 @@ export default async function SportsWeekPage() {
                 }}
               >
                 <Image 
-                  src={image.asset?._ref === 'default-sports-image' 
-                    ? `/images/sports-week-default-${index + 1}.jpg`
-                    : urlFor(image.asset).url()} 
+                  src={image.asset?._ref && image.asset._ref !== 'default-sports-image-1'
+                    ? urlFor(image.asset).url()
+                    : `/images/sports-week-default-${index + 1}.jpg`} 
                   alt={image.alt || "Sports Week Image"}
                   fill
                   priority
